@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置为Indeterminate状态" />
+
+    <com.buildware.widget.indeterm.IndeterminateCheckBox
+        android:id="@+id/icb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:theme="@style/IndeterminateCheckBoxTheme"
+        app:icb_indeterminate_color_as_checked="true" />
+
+    <Button
+        android:id="@+id/btn_as_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置Indeterminate状态与Check状态同色" />
+
+    <Button
+        android:id="@+id/btn_not_as_checked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置Indeterminate状态与Check状态不同色" />
+
+
+</LinearLayout>
